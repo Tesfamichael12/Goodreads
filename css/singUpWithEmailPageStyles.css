@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  line-height: 1.5;
+  background-color: #ffffff;
+}
+
+.sing-up-with-email-container {
+  width: 100%;
+  max-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sing-up-with-email-container h1 {
+  font-family: Copernicus, Georgia, Cambria, "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.sing-up-with-email-container label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}
+
+.sing-up-with-email-container input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #a5a4a4;
+  border-radius: 24px;
+  font-size: 16px;
+  background-color: #fafafa;
+  box-shadow: 0 0 0 3px 5px rgb(222, 224, 237);
+  transition: all 0.15s;
+}
+.sing-up-with-email-container input:hover {
+  background-color: #ebebeb;
+}
+
+.sing-up-with-email-container input:focus {
+  outline: none;
+  border-color: #666;
+  background-color: unset;
+}
+
+.sing-up-with-email-container .password-hint {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+  opacity: 0.7;
+  padding-left: 7px;
+}
+
+.sing-up-with-email-container .create-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1c1c1c;
+  color: white;
+  border: none;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 1rem 0;
+}
+
+.sing-up-with-email-container .create-button:hover {
+  background-color: #000;
+}
+
+.sing-up-with-email-container .terms {
+  font-size: 16px;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.sing-up-with-email-container .sign-in {
+  font-size: 14px;
+  margin: 1rem 0;
+}
+
+.sing-up-with-email-container a {
+  color: #00635d;
+  text-decoration: none;
+}
+
+.sing-up-with-email-container a:hover {
+  text-decoration: underline;
+}
+
+.sing-up-with-email-container.footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 12px;
+  color: #666;
+}
+
+.sing-up-with-email-container .footer-links {
+  margin-bottom: 0.5rem;
+}
+
+.sing-up-with-email-container .footer-links a {
+  margin: 0 0.5rem;
+  color: #666;
+}
