@@ -14,19 +14,19 @@ body {
   line-height: 24px;
 }
 
-.singn-up-with-container {
+.sign-up-with-container {
   width: 100%;
   max-width: 400px;
   text-align: center;
 }
 
-.singn-up-with-container .logo {
+.sign-up-with-container .logo {
   height: 40px;
   width: 181px;
   margin: 44px auto 48px;
 }
 
-.singn-up-with-container .button {
+.sign-up-with-container .button {
   width: 100%;
   padding: 12px;
   margin: 16px 0;
@@ -42,21 +42,21 @@ body {
   transition: background-color 0.2s;
 }
 
-.singn-up-with-container .amazon-btn {
+.sign-up-with-container .amazon-btn {
   background-color: #f5d47a;
   color: #000000;
   border-color: #d6aa59;
   transition: all 0.15s ease-in-out;
 }
 
-.singn-up-with-container .amazon-btn:hover {
+.sign-up-with-container .amazon-btn:hover {
   background-color: #f0b954;
 }
-.singn-up-with-container .amazon-btn:hover span.text-content {
+.sign-up-with-container .amazon-btn:hover span.text-content {
   opacity: 0.8;
 }
 
-.singn-up-with-container .apple-btn {
+.sign-up-with-container .apple-btn {
   background-color: #ffffff;
   padding-right: 25px;
   padding-top: 6px;
@@ -66,45 +66,45 @@ body {
   transition: all 0.15s ease-in-out;
 }
 
-.singn-up-with-container .apple-btn:hover span.text-content {
+.sign-up-with-container .apple-btn:hover span.text-content {
   opacity: 0.8;
 }
 
-.singn-up-with-container .email-btn {
+.sign-up-with-container .email-btn {
   background-color: #f4f1ea;
   color: #333333;
   transition: all 0.15s ease-in-out;
 }
 
-.singn-up-with-container .email-btn:hover {
+.sign-up-with-container .email-btn:hover {
   background-color: #ebe8e2;
   opacity: 0.9;
 }
 
-.singn-up-with-container .terms {
+.sign-up-with-container .terms {
   margin-top: 30px;
   font-size: 15px;
   color: #000;
 }
 
-.singn-up-with-container .terms a {
+.sign-up-with-container .terms a {
   color: #00635d;
   text-decoration: none;
 }
 
-.singn-up-with-container .signin {
+.sign-up-with-container .signin {
   margin-top: 10px;
   font-size: 15px;
 }
-.singn-up-with-container .signin a {
+.sign-up-with-container .signin a {
   color: #00635d;
   text-decoration: none;
 }
 
-.singn-up-with-container a:hover {
+.sign-up-with-container a:hover {
   text-decoration: underline;
 }
 
-.singn-up-with-container .button img {
+.sign-up-with-container .button img {
   width: 30px;
 }
