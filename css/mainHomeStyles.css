@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
+}
+
+.header-info a {
+  background-color: #ffd9d0;
+  display: flex;
+  max-width: 100%;
+  justify-content: center;
+}
+
+.nav-container {
+  background-color: #f4f1ea;
+  padding: 0 32px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 140px;
+}
+.logo img {
+  width: 100%;
+  margin-right: 15px;
+}
+
+.nav-links {
+  display: inline-flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: #382110;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  text-decoration: none;
+  height: 50px;
+  padding: 0 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #382110;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle::after {
+  content: "▼";
+  font-size: 0.6rem;
+  margin-left: 0.3rem;
+}
+
+.search-container {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 1fr;
+  max-width: 400px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #dcd6cc;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  outline: none;
+}
+.search-icon {
+  display: none;
+}
+
+.auth-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.auth-link {
+  color: #382110;
+  font-size: 16px;
+}
+
+@media (max-width: 1190px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header-info a {
+    overflow: hidden;
+  }
+
+  .nav-links {
+    order: 3;
+    width: 100%;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    border-top: 1px solid #d8d8d8;
+  }
+
+  .search-container {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container,
+  .auth-links .join,
+  .my-books-link {
+    display: none;
+  }
+  .nav-links {
+    gap: 10vw;
+  }
+  .nav {
+    padding-top: 10px;
+  }
+
+  .auth-links .sign-in {
+    height: 32px;
+    padding: 0 15px;
+    border-radius: 5px;
+    background-color: #382110;
+    color: white;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+  .search-icon {
+    display: block;
+  }
+}
+
+@media (max-width: 300px) {
+  .nav-links {
+    gap: 0;
+  }
+}
