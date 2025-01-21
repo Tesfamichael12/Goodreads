@@ -11,6 +11,13 @@ body {
 }
 
 /* Header styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
 .header-info a {
   background-color: #ffd9d0;
   display: flex;
@@ -91,11 +98,15 @@ body {
 /* Search input styles */
 .search-input {
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #dcd6cc;
-  border-radius: 3px;
-  font-size: 0.9rem;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
   outline: none;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 35px;
 }
 
 /* Hide search icon by default */
@@ -339,9 +350,14 @@ body {
 }
 
 .hero-logo {
+  width: 100%;
   margin: 20px;
   display: flex;
   justify-content: center;
+}
+.hero-section {
+  margin-top: 110px;
+  position: relative;
 }
 
 .hero img {
@@ -365,4 +381,424 @@ body {
   }
 }
 
+@media (max-width: 1190px) {
+  .hero-section {
+    margin-top: 165px;
+  }
+}
+
+.sign-up-with-page--overlay {
+  width: 300px;
+  height: 370px;
+  padding: 24px;
+  font-family: Merriweather, Georgia, serif;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  position: absolute;
+  top: 1px;
+  right: 220px;
+  bottom: 0;
+  z-index: 10; /* Ensure it overlays above other content */
+}
+.sign-up-with-page--overlay .signin {
+  margin-top: 24px !important;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-top: 1px solid #ccc;
+}
+.sign-up-with-page--overlay .terms {
+  font-size: 11px !important;
+}
+.sign-up-with-page--overlay h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 4px;
+  margin-bottom: 14px;
+}
+.sign-up-with-page--overlay .email-btn {
+  background-color: #382110 !important;
+  color: white !important;
+}
+
+@media screen and (max-width: 1230px) {
+  .sign-up-with-page--overlay {
+    display: none;
+  }
+}
 /* Hero seciton styles end */
+
+/* main section styles */
+.main-container {
+  width: 100%;
+  max-width: 570px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 5px;
+}
+.promo-section {
+  margin: 0 auto;
+  margin-top: 48px;
+  text-align: center;
+  color: #382110;
+  max-width: 424px;
+}
+
+.promo-section .heading {
+  font-family: Merriweather, Georgia, serif;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+/* styles for the sign up components */
+.sign-up-with-container {
+  width: 100%;
+  max-width: 424px;
+  text-align: center;
+}
+
+.sign-up-with-container .logo {
+  height: 40px;
+  width: 181px;
+  margin: 44px auto 48px;
+}
+
+.sign-up-with-container .button {
+  width: 100%;
+  padding: 12px;
+  margin: 16px 0;
+  border: 1px solid #d6d0c4;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.sign-up-with-container .amazon-btn {
+  background-color: #f5d47a;
+  color: #000000;
+  border-color: #d6aa59;
+  transition: all 0.15s ease-in-out;
+}
+
+.sign-up-with-container .amazon-btn:hover {
+  background-color: #f0b954;
+}
+.sign-up-with-container .amazon-btn:hover span.text-content {
+  opacity: 0.8;
+}
+
+.sign-up-with-container .apple-btn {
+  background-color: #ffffff;
+  padding-right: 25px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #000000;
+  border-color: #d6d0c4;
+  transition: all 0.15s ease-in-out;
+}
+
+.sign-up-with-container .apple-btn:hover span.text-content {
+  opacity: 0.8;
+}
+
+.sign-up-with-container .email-btn {
+  background-color: #f4f1ea;
+  color: #333333;
+  transition: all 0.15s ease-in-out;
+}
+
+.sign-up-with-container .email-btn:hover {
+  background-color: #ebe8e2;
+  opacity: 0.9;
+}
+
+.sign-up-with-container .terms {
+  margin-top: 30px;
+  font-size: 15px;
+  color: #000;
+}
+
+.sign-up-with-container .terms a {
+  color: #00635d;
+  text-decoration: none;
+}
+
+.sign-up-with-container .signin {
+  margin-top: 10px;
+  font-size: 15px;
+}
+.sign-up-with-container .signin a {
+  color: #00635d;
+  text-decoration: none;
+}
+
+.sign-up-with-container a:hover {
+  text-decoration: underline;
+}
+
+.sign-up-with-container .button img {
+  width: 30px;
+}
+
+.sign-up-with-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* books display grid styles */
+.books-gird-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.author-search-container {
+  margin-bottom: 40px;
+}
+
+.authors-search-input {
+  max-width: 400px;
+}
+/* Alrady have been writen above */
+/* .search-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  outline: none;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  padding-left: 35px;
+} */
+
+.search-input:focus {
+  outline: none;
+  border-color: #027a9f;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.book-section {
+  margin-bottom: 40px;
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.book-cover {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.book-cover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+
+  .section-title {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+  }
+
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .search-input {
+    font-size: 13px;
+  }
+}
+
+/* links and quotes section */
+.list-section,
+.genres-section,
+.quotes-section,
+.awards-section {
+  padding: 0 10px;
+}
+
+.section-title.with-count {
+  margin-bottom: 15px;
+}
+
+.section-link {
+  color: #333;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.main-container a {
+  color: #00635d;
+}
+
+.book-count {
+  color: #666;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.chevron {
+  color: #666;
+  font-size: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+.chevron:hover,
+.section-link:hover .chevron {
+  transform: translateX(5px);
+}
+
+.lists-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.lists-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-link {
+  color: #00635d;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.list-link:hover {
+  text-decoration: underline;
+}
+
+.quote-card {
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quote-content {
+  display: flex;
+  gap: 20px;
+}
+
+.quote-author-image {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.quote-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.quote-text p {
+  margin: 0;
+}
+
+.quote-author {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+.awards-banner {
+  display: block;
+  margin-top: 15px;
+}
+
+.awards-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.awards-link {
+  display: block;
+  color: #00635d;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+.awards-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .quote-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lists-grid {
+    gap: 15px;
+  }
+
+  .quote-card {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lists-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .section-title {
+    font-size: 13px;
+  }
+
+  .quote-text {
+    font-size: 13px;
+  }
+}
