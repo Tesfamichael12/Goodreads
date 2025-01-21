@@ -28,14 +28,15 @@ body {
   font-family: Copernicus, Georgia, Cambria, "Times New Roman", Times, serif;
   text-align: center;
   font-size: 45px;
-  margin-bottom: 1rem;
   font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .sign-up-with-email-container label {
   display: block;
   font-size: 16px;
-  margin-top: 8px;
+  margin-bottom: 5px;
 }
 
 .sign-up-with-email-container input {
@@ -123,13 +124,17 @@ body {
   max-width: 400px;
   margin: 0 auto;
 }
+.sign-in .form-group label {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
 
 .btn {
   display: block;
   width: 100%;
   padding: 10px;
   border-radius: 20px;
-  border: 1px solid #d8d8d8;
+  border: 2px solid #979aa1;
   background: none;
   font-size: 14px;
   cursor: pointer;
@@ -166,7 +171,6 @@ body {
 
 .terms a {
   color: #1c1c1c;
-  /* text-decoration: none; */
 }
 
 .terms a:hover {
@@ -219,6 +223,6 @@ body {
   margin: 0 10px;
 }
 
-.sign-in-heading {
+.sign-in .sign-in-heading {
   margin: 0;
 }
