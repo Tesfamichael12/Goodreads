@@ -1,13 +1,16 @@
+/* Reset default margin, padding, and set box-sizing to border-box for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Set default font for the body */
 body {
   font-family: "Lato", "Helvetica Neue", Arial, sans-serif;
 }
 
+/* Header styles */
 .header-info a {
   background-color: #ffd9d0;
   display: flex;
@@ -15,12 +18,14 @@ body {
   justify-content: center;
 }
 
+/* Navigation container styles */
 .nav-container {
   background-color: #f4f1ea;
   padding: 0 32px;
   border-bottom: 1px solid #d8d8d8;
 }
 
+/* Navigation bar styles */
 .nav {
   display: flex;
   align-items: center;
@@ -29,6 +34,7 @@ body {
   margin: 0 auto;
 }
 
+/* Logo styles */
 .logo {
   max-width: 140px;
 }
@@ -37,39 +43,44 @@ body {
   margin-right: 15px;
 }
 
+/* Navigation links styles */
 .nav-links {
   display: inline-flex;
   align-items: center;
 }
 
+/* Individual navigation link styles */
 .nav-link {
   color: #382110;
   display: flex;
   align-items: center;
   text-decoration: none;
   font-size: 16px;
-  text-decoration: none;
   height: 50px;
   padding: 0 12px;
   transition: all 0.2s ease-in-out;
 }
 
+/* Navigation link hover effect */
 .nav-link:hover {
   background-color: #382110;
   color: white;
 }
 
+/* Dropdown menu styles */
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
+/* Dropdown toggle arrow */
 .dropdown-toggle::after {
   content: "▼";
   font-size: 0.6rem;
   margin-left: 0.3rem;
 }
 
+/* Search container styles */
 .search-container {
   position: relative;
   flex-grow: 1;
@@ -77,6 +88,7 @@ body {
   max-width: 400px;
 }
 
+/* Search input styles */
 .search-input {
   width: 100%;
   padding: 0.5rem;
@@ -85,21 +97,26 @@ body {
   font-size: 0.9rem;
   outline: none;
 }
+
+/* Hide search icon by default */
 .search-icon {
   display: none;
 }
 
+/* Authentication links styles */
 .auth-links {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
+/* Individual authentication link styles */
 .auth-link {
   color: #382110;
   font-size: 16px;
 }
 
+/* Responsive styles for screens with max-width of 1190px */
 @media (max-width: 1190px) {
   .nav {
     flex-wrap: wrap;
@@ -125,6 +142,7 @@ body {
   }
 }
 
+/* Responsive styles for screens with max-width of 768px */
 @media (max-width: 768px) {
   .search-container,
   .auth-links .join,
@@ -153,19 +171,22 @@ body {
   }
 }
 
+/* Responsive styles for screens with max-width of 300px */
 @media (max-width: 300px) {
   .nav-links {
     gap: 0;
   }
 }
+/* header styles end */
 
-/* footer section styles */
+/* Footer section styles */
 .footer {
   background-color: #f9f9f9;
   padding: 2rem 1rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* Footer content grid layout */
 .footer-content {
   max-width: 1200px;
   margin: 0 auto;
@@ -174,6 +195,7 @@ body {
   gap: 2rem;
 }
 
+/* Footer section heading styles */
 .footer-section h3 {
   color: #333;
   font-size: 0.875rem;
@@ -182,37 +204,44 @@ body {
   opacity: 0.8;
 }
 
+/* Footer section list styles */
 .footer-section ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Footer section list item styles */
 .footer-section ul li {
   margin-bottom: 0.5rem;
 }
 
+/* Footer section list item link styles */
 .footer-section ul li a {
   color: #382110;
   text-decoration: none;
   font-size: 0.875rem;
 }
 
+/* Footer section list item link hover effect */
 .footer-section ul li a:hover {
   text-decoration: underline;
 }
 
+/* Social icons container styles */
 .social-icons {
   display: flex;
   gap: 1rem;
 }
 
+/* Individual social icon styles */
 .social-icon {
   width: 30px;
   height: 30px;
   opacity: 0.8;
 }
 
+/* App download buttons container styles */
 .app-downloads {
   display: flex;
   flex-wrap: wrap;
@@ -221,11 +250,13 @@ body {
   gap: 1rem;
 }
 
+/* App download button image styles */
 .app-button img {
   height: 40px;
   width: auto;
 }
 
+/* Footer bottom section styles */
 .footer-bottom {
   max-width: 1200px;
   margin: 2rem auto 0;
@@ -238,22 +269,26 @@ body {
   color: #666;
 }
 
+/* Desktop version link styles */
 .desktop-version {
   color: #382110;
   text-decoration: none;
   font-size: 0.875rem;
 }
 
+/* Desktop version link hover effect */
 .desktop-version:hover {
   text-decoration: underline;
 }
 
+/* Responsive styles for screens with max-width of 940px */
 @media (max-width: 940px) {
   .app-downloads {
     flex-direction: row;
   }
 }
 
+/* Responsive styles for screens with max-width of 768px */
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -274,6 +309,7 @@ body {
   }
 }
 
+/* Responsive styles for screens with max-width of 480px */
 @media (max-width: 480px) {
   .footer {
     padding: 1.5rem 1rem;
@@ -293,4 +329,40 @@ body {
     align-items: center;
   }
 }
-/* footer section styles end */
+/* Footer section styles end */
+
+/* Hero seciton styles */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-logo {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero img {
+  width: 100%;
+}
+.second-image {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero img {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .first-image {
+    display: none;
+  }
+  .second-image {
+    display: block;
+  }
+}
+
+/* Hero seciton styles end */
