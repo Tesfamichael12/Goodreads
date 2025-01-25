@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "This is a simple frontend clone of GoodReads, designed to showcase basic web development skills using HTML, CSS, and JavaScript. This project replicates some of the core visual features of GoodReads to demonstrate frontend design and interactivity.",
   "scripts": {
-    "start": "parcel mainHome.html",
-    "build": "parcel build mainHome.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,7 +17,7 @@
   },
   "homepage": "https://github.com/Tesfamichael12/Goodreaders#readme",
   "devDependencies": {
-    "parcel": "^2.0.0",
+    "parcel": "^2.13.3",
     "svgo": "^3.3.2"
   }
 }
