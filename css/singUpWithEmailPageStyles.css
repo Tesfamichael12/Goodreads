@@ -39,6 +39,13 @@ body {
   margin-bottom: 5px;
 }
 
+form {
+  width: 100%;
+}
+.form-group {
+  width: 100%;
+}
+
 .sign-up-with-email-container input {
   width: 100%;
   padding: 10px 12px;
