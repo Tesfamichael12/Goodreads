@@ -58,7 +58,13 @@
           <input type="password" id="password-confirm" required />
         </div>
 
-        <button type="submit" class="create-button">Create account</button>
+        <button
+          type="submit"
+          class="create-button"
+          onclick="if(document.getElementById('name').value && document.getElementById('email').value && document.getElementById('password').value.length >= 6 && document.getElementById('password').value === document.getElementById('password-confirm').value) { location.href='../mainHome.html'; } else { alert('Please fill out the form correctly.'); return false; }"
+        >
+          Create account
+        </button>
 
         <div class="terms">
           By creating an account, you agree to the Goodreads

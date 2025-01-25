@@ -41,7 +41,8 @@
             required
           />
 
-        <button type="submit" class="btn create-button">Sign In</button>
+        <button type="submit" class="btn create-button" onclick="event.preventDefault(); if(document.getElementById('email').value && document.getElementById('password').value.length >= 6) { location.href='../mainHome.html'; } else { alert('Please fill out the form correctly.'); return false; }">Sign In</button>
+        
         </form>
 
         <div class="container">
