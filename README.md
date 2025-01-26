@@ -63,4 +63,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Contact
 
 Email: tesfamichael132@gmail.com
-Project Link: [https://github.com/yourusername/bookworm](https://github.com/Tesfamichael12/Goodreaders)
+Project Link: [https://github.com/yourusername/Goodreads](https://github.com/Tesfamichael12/Goodreads)
