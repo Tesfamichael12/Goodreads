@@ -2,6 +2,10 @@
 
 This is a simple frontend clone of GoodReads, designed to showcase basic web development skills using HTML, CSS, and JavaScript. This project replicates some of the core visual features of GoodReads to demonstrate frontend design and interactivity.
 
+## See Live
+
+🚀 [Live Demo](https://goodreads-clon-by-code-worriors.netlify.app/) 🌐
+
 ## Features
 
 - **Book Details Page**: Display of book information, including:
@@ -62,5 +66,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-Email: tesfamichael132@gmail.com
-Project Link: [https://github.com/yourusername/Goodreads](https://github.com/Tesfamichael12/Goodreads)
+Email: tesfamichael132@gmail.com <br>
+Project Link: [https://github.com/Tesfamichael12/Goodreads](https://github.com/Tesfamichael12/Goodreads)
