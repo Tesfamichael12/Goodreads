@@ -4,7 +4,7 @@ This is a simple frontend clone of GoodReads, designed to showcase basic web dev
 
 ## See Live
 
-🚀 [Live Demo](https://goodreads-clon-by-code-worriors.netlify.app/) 🌐
+🚀 [Live Demo](https://goodreads-clon-by-tesfamichael-tafere.netlify.app/) 🌐
 
 ## Features
 
